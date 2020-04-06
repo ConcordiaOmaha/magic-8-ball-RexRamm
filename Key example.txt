@@ -1,0 +1,45 @@
+// Example program
+#include <iostream>
+#include <string>
+
+int main()
+{
+    //variables intialized
+    double num1 = 0;        //holds user's first number
+    double num2 = 0;        //holds user's second number
+    
+    //user input
+    std::cout << "enter a number \n"; 
+    std::cin >> num1;
+    std::cout << "enter a second number \n";
+    std::cin >> num2; 
+    
+    //Addition
+    double output = num1 + num2; 
+    std::cout << "Adding your numbers = " << output << "\n";
+    
+    //Subtraction
+    output = num1 - num2; 
+    std::cout << "Subtracting your numbers = " << output << "\n";
+    
+    //Multiplication
+    output = num1 * num2; 
+    std::cout << "Multiplying your numbers = " << output << "\n";
+    
+    //Division
+    output = num1 / num2; 
+    std::cout << "Dividing your numbers = " << output << "\n";
+
+    //Modulus
+    
+    int num3 = num1*1;  //converting double type to ints 
+    int num4 = num2*1; 
+    
+    output = num3 % num4; 
+    std::cout << "your first number mod your second number = " << output << "\n";
+    
+}
+
+
+
+
