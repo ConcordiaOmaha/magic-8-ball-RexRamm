@@ -1,0 +1,35 @@
+//------------- Magic 8 ball starter Code ----------------
+
+#include <iostream>
+#include <string>
+
+int main()
+{
+    // variable declarations
+    int userResponse; 
+    
+    // prompt the user to enter some input. 
+    std::cout << "on a scale of 1 to 10, How are you feeling today?\n"; 
+    //take input from the user and store it to a variable. 
+    std::cin >> userResponse;
+    
+    //based on the input reply to the user. 
+    if (userResponse == 1) 
+    {
+        std::cout << "We hope you feel better tomorrow... "; 
+    } else
+    {
+        std::cout << "It could be worse... "; 
+    }
+
+    //create a secondary reply that is completely random. 
+    int randNum = rand() % 100;         // adding %100 keeps the random number between 0 and 99. 
+    
+    if (randNum > 60)
+    {
+        std::cout << "better luck next time"; 
+    } else 
+    {
+        std::cout << "Life must pretty good for you.";
+    }
+}
