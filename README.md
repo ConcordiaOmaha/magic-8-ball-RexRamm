@@ -3,7 +3,7 @@
 
 int main()
 {
-    
+srand(time(0));    
 int userResponse;
 std::cout << "How are you feeling today on a scale of 1-10:\n";
 std::cin >> userResponse;
